@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../../image/top/logo.png';
+import Search from '../../../image/top/search.png'
 
 import DrawerToggleButton from '../DrawerToggleButton/index';
 import './style.scss';
@@ -14,25 +15,25 @@ const Toolbar = props => (
             </div>
             <div className='toolbarLogo'>
                 <Link to="/">
-                    <img src={Logo} className='toolbarLogoItem' />
+                    <img src={Logo} className='toolbarLogo' />
                 </Link>
-            </div>
-            <div className='toolbarNavigationItems'>
-                <input/>Wpisz czego szukasz .. 
-                <button>YY</button>
             </div>
             <div className="spacer" />
             <div className='toolbarNavigationItems'>
-                <ul>
-                    <li>
-                        <Link to="profile_provider">PROFIL FIRMA</Link>
-                        <img src={Logo} herf='/profile_provider' className="providerIconToolbar"/>
-                    </li>
-                    <li>
-                        <a><Link to="profile_user">MÓJ PROFIL</Link></a>
-                        <img src={Logo} herf='/profile_user' className="userIconToolbar"/>
-                    </li>
-                </ul>
+                <div>
+                    <input className="searcher" placeholder="Wpisz czego szukasz..." />
+                    <button className="searchButton" type="submit"> </button>
+                </div>
+                <div>
+                    <a>PL</a>
+                    <input className="languageChange" />
+                </div>
+                <div>
+                    <a><Link to="/">TWOJE KONTO</Link></a>
+                </div>
+                <div>
+                    <a><Link to="/">TWÓJ KOSZYK</Link></a>
+                </div>
             </div>
         </nav>
     </header>

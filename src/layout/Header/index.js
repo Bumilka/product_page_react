@@ -3,37 +3,21 @@ import React, { Component } from 'react';
 import Toolbar from './Toolbar/index';
 import SideDrawer from './SideDrawer/index';
 import Backdrop from './Backdrop/index';
+import TopLinks from './TopLinks/index';
+import Menu from './Menu/index';
 
 import './style.scss'
+
 
 class Header extends Component {
     constructor(props){
         super(props);
-        //this.logout= this.logout.bind(this)
         this.state = {
-            sideDrawerOpen: false,
-            //user:{},
+            sideDrawerOpen: false,  
         } 
     }
     /*
     componentDidMount(){
-        this.authListener();
-    }
-
-    authListener() {
-        fire.auth().onAuthStateChanged((user) =>{
-            if(user) {
-                this.setState({user});
-              //   localStorage.setItem('user', user.uid);
-            } else {
-                this.setState({user: null});
-               // localStorage.removeItem('user');
-            }
-        });
-    }
-    
-    logout(){
-        fire.auth().signOut();
     }
     */
     drawerToggleClickHandler = () => {
@@ -54,13 +38,12 @@ class Header extends Component {
 
         return (
             <div style={{ height: '100%' }}>
+                <TopLinks/>
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
                 <SideDrawer show={this.state.sideDrawerOpen}/>
+                <Menu/>
                 {backdrop}
-                {/*<div>
-                   {this.state.user ? (<Home />) : (<Login/>)} 
-                </div>
-                <button onClick={this.logout}>Logout</button> */}
+            
             </div>
         );
     }
