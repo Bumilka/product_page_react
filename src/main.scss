@@ -1,1 +1,19 @@
+$darkGrey: #333333;
 
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+    font-size: 14px;
+    text-align: left;
+}
+
+//media
+.container{
+    width: 90%;
+}
+li{
+    list-style-type: none;
+}

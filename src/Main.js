@@ -16,15 +16,17 @@ import './main.scss';
 export default () => {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div >
         <Header />
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/game-sets' component={GameSets} />
-          <Route exact path='/eqipment' component={Equipment} />
-          <Route exact path='/clothing' component={Clothing} />
-          <Route exact path='/paints-balls' component={PaintsBalls} />
-          <Route exact path='/sale' component={Sale} />
+          <div className="container">
+            <Route exact path='/' component={Home} />
+            <Route exact path='/game-sets' component={GameSets} />
+            <Route exact path='/eqipment' component={Equipment} />
+            <Route exact path='/clothing' component={Clothing} />
+            <Route exact path='/paints-balls' component={PaintsBalls} />
+            <Route exact path='/sale' component={Sale} />
+          </div>
         </Switch>
         <Footer />
       </div>

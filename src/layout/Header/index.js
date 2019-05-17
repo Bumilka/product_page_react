@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Toolbar from './Toolbar/index';
 import SideDrawer from './SideDrawer/index';
 import Backdrop from './Backdrop/index';
-import TopLinks from './TopLinks/index';
+import TopMenu from './TopMenu/index';
 import Menu from './Menu/index';
 
 import './style.scss'
@@ -37,14 +37,13 @@ class Header extends Component {
         }
 
         return (
-            <div style={{ height: '100%' }}>
-                <TopLinks/>
+            <header style={{ height: '100%', width: '100%' }}>
+                <TopMenu/>
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
                 <SideDrawer show={this.state.sideDrawerOpen}/>
                 <Menu/>
                 {backdrop}
-            
-            </div>
+            </header>
         );
     }
 }

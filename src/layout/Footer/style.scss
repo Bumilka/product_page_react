@@ -1,0 +1,48 @@
+@import '../../main.scss';
+
+footer{
+    display: block;
+    background: url(../../image/footer/bg-footer.png) repeat-x
+    center top;
+    background-size: contain;
+    padding-top: 15%;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    margin-top: 10px;
+    clear: both;
+}
+.footerContainers{
+    margin: 0 auto;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 30px;
+    //margin-left: 35px;
+    border-right: 1px solid #333;
+}
+.footerTitle{
+    display: block;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.071em;
+    letter-spacing: 1.5px;
+}
+.footerLinks a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 1;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
