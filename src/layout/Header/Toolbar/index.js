@@ -2,43 +2,33 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../../image/top/logo.png';
-import Search from '../../../image/top/search.png'
 
 import DrawerToggleButton from '../DrawerToggleButton/index';
+import SearcherInput from './SearcherInput/index';
+import LoginSection from './LoginSection/index';
 import './style.scss';
 
 const Toolbar = props => (
     <div className='toolbar'>
-        <nav className='toolbarContainers'>
-            <div className="toolbarContainer">
-                <ul className='toolbarToggleButton'>
-                    <DrawerToggleButton click={props.drawerClickHandler} />
+        <nav className='toolbarNavigation'>
+            <div className='toolbarToggleButton'>
+                <DrawerToggleButton click={props.drawerClickHandler} />
+            </div>
+            <div className='toolbarLogo'>
+                <Link to="/">
+                    <img src={Logo} className='toolbarLogoItem' />
+                </Link>
+            </div>
+            <div className="spacer" />
+            <div className='toolbarNavigationItems'>
+                <ul>
+                    <li>
+                        <SearcherInput />
+                    </li>
+                    <li>
+                        <LoginSection/>
+                    </li>
                 </ul>
-                <ul className='toolbarLogo'>
-                    <Link to="/">
-                        <img src={Logo} className='toolbarLogo' />
-                    </Link>
-                </ul>
-                <div className="spacer" />
-                <div className='toolbarItems'>
-                    <ul>
-                      
-                                <input className="searcher" placeholder="Wpisz czego szukasz..." />
-                                <button className="searchButton" type="submit"> </button>
-                            
-                       
-                    </ul>
-                    <ul>
-                        <a>PL</a>
-                        <input className="languageChange" />
-                    </ul>
-                    <ul>
-                        <a><Link to="/">TWOJE KONTO</Link></a>
-                    </ul>
-                    <ul>
-                        <a  className="toolbarShopingBag"><Link to="/">TWÓJ KOSZYK</Link></a>
-                    </ul>
-                </div>
             </div>
         </nav>
     </div>

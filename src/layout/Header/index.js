@@ -4,9 +4,10 @@ import Toolbar from './Toolbar/index';
 import SideDrawer from './SideDrawer/index';
 import Backdrop from './Backdrop/index';
 import TopMenu from './TopMenu/index';
-import Menu from './Menu/index';
+import MenuDropdown from './MenuDropdown/index';
+import BreadCrumb from './BreadCrumb/index';
 
-import './style.scss'
+import './style.scss';
 
 
 class Header extends Component {
@@ -41,7 +42,8 @@ class Header extends Component {
                 <TopMenu/>
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
                 <SideDrawer show={this.state.sideDrawerOpen}/>
-                <Menu/>
+                <MenuDropdown/>
+                <BreadCrumb/>
                 {backdrop}
             </header>
         );
