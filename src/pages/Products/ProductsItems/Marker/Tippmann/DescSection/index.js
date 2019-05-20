@@ -3,27 +3,27 @@ import './style.scss'
 
 const content = [
     {
-        question: "Czy ten pistolet jest idealny do gry w painballa?",
+        question: "Czy ten pistolet jest idealny do gry w painballa? >",
         answer:
             "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.",
     },
     {
-        question: "Czy ten model posiada mechanizm spustowy?",
+        question: "Czy ten model posiada mechanizm spustowy? >",
         answer:
             "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.",
     },
     {
-        question: "Jakie dobrać naboje do tego sprzętu?",
+        question: "Jakie dobrać naboje do tego sprzętu? >",
         answer:
             "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.",
     },
     {
-        question: "Nie mogę znaleźć instrukcji, czy mi ją doslecie?",
+        question: "Nie mogę znaleźć instrukcji, czy mi ją doslecie? > ",
         answer: "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.",
     }
 ];
 
-class DescSectionTippmann extends Component {
+class QuestionsandAnswersTippmann extends Component {
     state = {
         active: null
     };
@@ -54,4 +54,4 @@ class DescSectionTippmann extends Component {
     }
 }
 
-export default DescSectionTippmann;
+export default QuestionsandAnswersTippmann;
