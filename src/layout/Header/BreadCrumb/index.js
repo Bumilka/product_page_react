@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
+import './style.scss'
 
 
 class BreadCrumb extends Component {
     render() {
         return (
-            <div style={{
-                    background: 'url(../../../image/top/background-down.png)',    
-                    paddingTop: '15px',
-                    paddingBlockEnd: '15px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection: 'row',
-                    justifyContent: 'start',   
-            }}>  
+            <div className="breadCrumbSection">  
                 Strona główna >
             </div>
         );

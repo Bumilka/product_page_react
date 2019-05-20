@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 
-class GameSets extends Component {
+class HotSpot extends Component {
     render() {
         return (
             <div style={{ textAlign: "center", fontSize: '30px' }}>
-                Tekst przykładowy : Gotowe zestawy do Gry
-            </div>
+                HotSpot
+        </div>
         );
     }
 }
 
-export default GameSets;
+export default HotSpot;

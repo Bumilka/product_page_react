@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         return (
-            <div>
-                SRONA GŁÓWNA
-            </div>
+            <div style={{ textAlign: "center", fontSize: '30px' }}>
+                Tekst przykładowy : STRONA GŁOWNA
+        </div>
         );
     }
 }

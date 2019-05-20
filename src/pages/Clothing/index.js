@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 class Clothing extends Component {
     render() {
         return (
-            <div>  Odzież </div>
+            <div style={{ textAlign: "center", fontSize: '30px' }}>
+                Tekst przykładowy : Odzież
+            </div>
         );
     }
 }

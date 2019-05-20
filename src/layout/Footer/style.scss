@@ -30,19 +30,29 @@ footer{
     border-right: 1px solid #333;
 }
 .footerTitle{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     padding-bottom: 17px;
+    padding-left: 40px;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFF;
-    font-size: 1.071em;
+    font-size: 10px;
     letter-spacing: 1.5px;
 }
 .footerLinks a{
+  
+    justify-content: start;
+ 
     list-style-type: none;
     text-decoration: none;
     color: #FFF;
-    line-height: 1;
-    font-size: 1em;
+    line-height: 1.5;
+    font-size: 9px;
     letter-spacing: 1px;
+}
+
+.iaiLogo{
+    background: #333;
 }

@@ -1,0 +1,11 @@
+
+  p {
+    height: 0;
+    width: 40%;
+    overflow: hidden;
+    transition: height 0.2s;
+  }
+  p.active {
+    height: 55px;
+  }
+  

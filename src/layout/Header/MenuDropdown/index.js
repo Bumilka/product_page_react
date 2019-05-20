@@ -39,11 +39,11 @@ class MenuDropdown extends Component {
                         </li>
                         <li>
                             <div className="dropdown">
-                                <div><Link to="eqipment" className="navTitle" onClick={this.showDropdownMenu}>SPRZĘT &#8744;</Link></div>
+                                <div><Link to="eqipment" className="navTitle" onClick={this.showDropdownMenu}>SPRZĘT ></Link></div>
 
                                 {this.state.displayMenu ? (
                                     <ul>
-                                        <li className="dropdownList"><a href="#">Marker</a></li>
+                                        <li className="dropdownList"><a> <Link to="marker-tippmann">Marker Tippmann</Link></a></li>
                                         <li className="dropdownList"><a href="#">Egzample 1</a></li>
                                         <li className="dropdownList"><a href="#">Egzample 2</a></li>
                                     </ul>
@@ -55,26 +55,15 @@ class MenuDropdown extends Component {
                             </div>
                         </li>
                         <li>
-                            <div className="dropdown">
-                                <div><Link to="clothing" className="navTitle" onClick={this.showDropdownMenu}>ODZIEŻ &#8744;</Link></div>
-
-                                {this.state.displayMenu ? (
-                                    <ul>
-                                        <li className="dropdownList"><a href="#">Egzample 3</a></li>
-                                        <li className="dropdownList"><a href="#">Egzample 4</a></li>
-                                    </ul>
-                                ) :
-                                    (
-                                        null
-                                    )
-                                }
-                            </div>
+                            <a><Link to="clothing" className="navTitle"> ODZIEŻ </Link></a>
+                        </li>
+                        <li></li>
+                       
+                        <li>
+                            <a><Link to="paints-balls" className="navTitle"> KULKI </Link></a>
                         </li>
                         <li>
-                            <a><Link to="paints-balls" className="navTitle"> KULKI &#8744;</Link></a>
-                        </li>
-                        <li>
-                            <a><Link to="sale" className="navTitle">WYPRZEDAŻE &#8744;</Link></a>
+                            <a><Link to="sale" className="navTitle">WYPRZEDAŻE </Link></a>
                         </li>
                     </ul>
                 </nav>

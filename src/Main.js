@@ -9,6 +9,7 @@ import Equipment from './pages/Equipment/index';
 import Clothing from './pages/Clothing/index';
 import PaintsBalls from './pages/PaintBalls/index';
 import Sale from './pages/Sale/index';
+import TippmanFT50 from './pages/Products/ProductsItems/Marker/Tippmann/Items/TippmannFT50';
 
 import './main.scss';
 
@@ -25,6 +26,7 @@ export default () => {
             <Route exact path='/clothing' component={Clothing} />
             <Route exact path='/paints-balls' component={PaintsBalls} />
             <Route exact path='/sale' component={Sale} />
+            <Route exact path="/marker-tippmann" component={TippmanFT50}/>
         </Switch>
         <Footer />
       </div>
