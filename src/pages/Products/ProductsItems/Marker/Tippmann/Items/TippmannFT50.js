@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import QuestionsandAnswersTippmann from '../../DescSection/index';
-import BlogSection from '../../../../../CardProducts/BlogSection/index';
-import HotSpot from '../../../../../CardProducts/HotSpot';
+//import QuestionsandAnswersTippmann from '../../DescSection/index';
+//import BlogSection from '../../../../../CardProducts/BlogSection/index';
+//import HotSpot from '../../../../../CardProducts/HotSpot';
 
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "./style.scss";
 
 import ImageGallery from 'react-image-gallery';
 
-const PREFIX_URL = 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/';
+const PREFIX_URL = 'https://github.com/Bumilka/iai-website/tree/master/src/pages/Products/ProductsItems/Marker/Tippmann/Items/FT50/Image';
 
 class TippmannFT50 extends React.Component {
 
@@ -34,26 +34,26 @@ class TippmannFT50 extends React.Component {
 
     this.images = [
       {
-        thumbnail: `${PREFIX_URL}4v.jpg`,
-        original: `${PREFIX_URL}4v.jpg`,
+        thumbnail: `${PREFIX_URL}4v.png`,
+        original: `${PREFIX_URL}4v.png`,
       },
       {
-        original: `${PREFIX_URL}image_set_default.jpg`,
-        thumbnail: `${PREFIX_URL}image_set_thumb.jpg`,
+        original: `${PREFIX_URL}image_set_default.png`,
+        thumbnail: `${PREFIX_URL}image_set_thumb.png`,
         imageSet: [
           {
-            srcSet: `${PREFIX_URL}image_set_cropped.jpg`,
+            srcSet: `${PREFIX_URL}image_set_cropped.png`,
             media : '(max-width: 1280px)',
           },
           {
-            srcSet: `${PREFIX_URL}image_set_default.jpg`,
+            srcSet: `${PREFIX_URL}image_set_default.png`,
             media : '(min-width: 1280px)',
           }
         ]
       },
       {
-        original: `${PREFIX_URL}1.jpg`,
-        thumbnail: `${PREFIX_URL}1t.jpg`,
+        original: `${PREFIX_URL}1.png`,
+        thumbnail: `${PREFIX_URL}1t.png`,
         originalClass: 'featured-slide',
         thumbnailClass: 'featured-thumb',
         description: 'Custom class for slides & thumbnails'
