@@ -1,0 +1,13 @@
+.counter{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    border: 1px solid rgb(201, 196, 196);
+    padding: 9px;
+    font-size:20px;
+}
+.counterBorder{
+    margin-left: 10px;
+    margin-right: 10px;
+}

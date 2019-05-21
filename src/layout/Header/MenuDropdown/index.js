@@ -44,8 +44,8 @@ class MenuDropdown extends Component {
                                 {this.state.displayMenu ? (
                                     <ul>
                                         <li className="dropdownList"><a> <Link to="marker-tippmann">Marker Tippmann</Link></a></li>
-                                        <li className="dropdownList"><a >Egzample 1</a></li>
-                                        <li className="dropdownList"><a >Egzample 2</a></li>
+                                        <li className="dropdownList"><a > <Link to="/"></Link>Egzample 1</a></li>
+                                        <li className="dropdownList"><a > <Link to="/"></Link>Egzample 2</a></li>
                                     </ul>
                                 ) :
                                     (
