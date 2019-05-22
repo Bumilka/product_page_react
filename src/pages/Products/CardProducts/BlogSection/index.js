@@ -10,14 +10,15 @@ import './style.scss'
 class BlogSection extends Component {
     render() {
         return (
-            <div className='blogSectionContainers'>
+            <div className='blogSection'>
                 <div className="blogSectionTitle">
-                    <img src={Dot} />
-                    <a><span>PORADY NASZEGO EKSPERTA</span></a>
+                    <img src={Dot} className="dotImage" />
+                    <a className="dotText"><span>PORADY NASZEGO EKSPERTA</span></a>
                 </div>
                 <div className="blogSectionContainer">
-                    <div className="blogSectionColumn">
-                        <div className="postTitle">
+                    <div>
+                        <div><b> Jak stworzyć samemu farby do gry?</b></div>
+                        <div className="postItem">
                             <div>
                                 <img src={Post1} className="blogSectionImage" />
                             </div>
@@ -25,10 +26,10 @@ class BlogSection extends Component {
                                 <a ><span>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.</span></a>
                             </div>
                         </div>
-
                     </div>
-                    <div className="blogSectionColumn">
-                        <div className="postTitle">
+                    <div>
+                        <div><b> Jak dodać naboje z farbą do mojego sprzętu?</b></div>
+                        <div className="postItem">
                             <div>
                                 <img src={Post2} className="blogSectionImage" />
                             </div>
@@ -36,8 +37,8 @@ class BlogSection extends Component {
                                 <a ><span>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.</span></a>
                             </div>
                         </div>
-
                     </div>
+                    
                 </div>
             </div>
         );

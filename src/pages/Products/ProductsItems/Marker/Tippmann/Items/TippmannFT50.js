@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import QuestionsAndAnswersTippmann from '../DescSection/index';
+import DescSectionTippmann from '../DescSection/index';
 import BlogSection from '../../../../CardProducts/BlogSection';
 import HotSpot from '../../../../CardProducts/HotSpot';
 import Counter from '../../../../CardProducts/Projector/Counter';
@@ -332,9 +332,9 @@ class TippmannFT50 extends Component {
               <div>
                 <Counter />
               </div>
-              <div className="buttonAddBag">
+              <button className="buttonAddBag">
                 <b className="buttonAddBagText">DODAJ DO KOSZYKA</b>
-              </div>
+              </button>
             </div>
             <div className="shipmentData">
               <div className="shipmentDataItems">
@@ -357,7 +357,7 @@ class TippmannFT50 extends Component {
           <HotSpot />
         </div>
         <div>
-          <QuestionsAndAnswersTippmann />
+          <DescSectionTippmann />
         </div>
         <div>
           <BlogSection />

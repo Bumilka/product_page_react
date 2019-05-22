@@ -11,8 +11,8 @@ class Hotspot extends Component {
         return (
             <div className='hotSpotSectionContainers'>
                     <div className="hotSpotSectionTitle">
-                        <img src={Dot} />
-                        <a><span>DOBIERZ DO KOMPLETU</span></a>
+                        <img src={Dot} className="dotImage" />
+                        <a className="dotText">DOBIERZ DO KOMPLETU</a>
                     </div>
                 <div className="hotSpotSectionContainer">
                     <div className="hotSpotSectionColumn">
@@ -26,6 +26,15 @@ class Hotspot extends Component {
                     </div>
                     <div className="hotSpotSectionColumn">
                     <div>
+                            <img src={Mask} className="hotSpotSectionImage" />
+                        </div>
+                        <div className="hotSpotSectionName">
+                            <a ><span>MASKA EMPIRE E_FLEX <br /> GOOGLE (BLACK) <br/></span></a>
+                            <b className="hotSpotSectionPrice"><span>139,00 zł</span></b>
+                        </div>
+                    </div>
+                    <div className="hotSpotSectionColumn">
+                        <div>
                             <img src={Mask} className="hotSpotSectionImage" />
                         </div>
                         <div className="hotSpotSectionName">
