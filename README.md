@@ -1,6 +1,6 @@
 
 
-### `Getting started`
+## Getting started:
 
 #`git clone  https://github.com/Bumilka/iai-website.git`
 <br>
