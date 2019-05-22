@@ -3,8 +3,7 @@
 ### `Getting started`
 
 #`git clone  https://github.com/Bumilka/iai-website.git`
-#`cd react-image-gallery`
-# `npm install`
+#`npm install`
 #`npm start`
 
 
