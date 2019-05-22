@@ -220,7 +220,7 @@ class TippmannFT50 extends Component {
     return (
       <div>
         <div className="projectorSection">
-          <section className='ProjectorSectionSlider'>
+          <section className='projectorSectionSlider'>
             <ImageGallery
               ref={i => this._imageGallery = i}
               items={this.images}
@@ -278,8 +278,8 @@ class TippmannFT50 extends Component {
                 </div>
               </div>
             </div>
-            <div className="InputProduct">
-              <div className="InputProductItems">
+            <div className="inputProduct">
+              <div className="inputProductItems">
                 <a className="dataTitle">DŁUGOŚĆ LUFY:</a>
                 <div>
                   <label>

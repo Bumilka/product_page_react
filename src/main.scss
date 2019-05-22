@@ -11,20 +11,30 @@ html,body{
     text-align: left;
 }
 
-//media
 .container{
     width: 100%;
 }
 li{
     list-style-type: none;
 }
-.dotImage{
-    width: 10px;
+
+@media(min-width: 769px){
+    .dotText{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .dotImage{
+        width: 10px;
+    }
 }
 
-.dotText{
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 10px;
-
+@media(max-width: 770px){
+    .dotText{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .dotImage{
+        width: 7px;
+}
 }

@@ -70,9 +70,9 @@ class DescSectionTippmann extends Component {
                                 </p>
                             </div>
                         ))}
-                        <div style={{ marginTop: "35px" }}>
+                        <div className="questionButonSection">
                             <b >NIE ZNALAZŁEŚ ODPOWIEDZI ?:</b>
-                            <button></button>
+                            <button className="questionButon">ZADAJ SWOJE PYTANIE</button>
                         </div>
                     </div>
                     

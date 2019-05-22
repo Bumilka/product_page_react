@@ -1,30 +1,38 @@
-@import '../../../main.scss';
+@import "../../../main.scss";
 
-.menuTop{
-    height: 40px;  
-    background: $darkGrey; 
-}
-.menuTopContainers{ 
+@media (min-width: 769px) {
+  .menuTop {
+    height: 40px;
+    background: $darkGrey;
+  }
+  .menuTopContainers {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-items: center ; 
+    align-items: center;
     color: white;
     padding: 10px;
-}   
-.menuTopContainer{
+  }
+  .menuTopContainer {
     text-align: left;
     vertical-align: middle;
-}
-.menuTopItem{
+  }
+  .menuTopItem {
     text-decoration: none;
     color: white;
     margin-right: 15px;
     margin-left: 30px;
-    font-size: 10px;    
-}
+    font-size: 10px;
+  }
 
-.menuTopIcon{
+  .menuTopIcon {
     margin-right: 10px;
     height: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .menuTop {
+    display: none;
+  }
 }

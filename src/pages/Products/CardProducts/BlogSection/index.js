@@ -13,27 +13,27 @@ class BlogSection extends Component {
             <div className='blogSection'>
                 <div className="blogSectionTitle">
                     <img src={Dot} className="dotImage" />
-                    <a className="dotText"><span>PORADY NASZEGO EKSPERTA</span></a>
+                    <a className="dotText">PORADY NASZEGO EKSPERTA</a>
                 </div>
                 <div className="blogSectionContainer">
                     <div>
-                        <div><b> Jak stworzyć samemu farby do gry?</b></div>
+                        <div className="postTitle"><b> Jak stworzyć samemu farby do gry?</b></div>
                         <div className="postItem">
                             <div>
-                                <img src={Post1} className="blogSectionImage" />
+                                <img src={Post1} className="postImage" />
                             </div>
-                            <div className="blogSectionName">
+                            <div className="postText">
                                 <a ><span>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.</span></a>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div><b> Jak dodać naboje z farbą do mojego sprzętu?</b></div>
+                        <div className="postTitle"><b> Jak dodać naboje z farbą do mojego sprzętu?</b></div>
                         <div className="postItem">
                             <div>
-                                <img src={Post2} className="blogSectionImage" />
+                                <img src={Post2} className="postImage" />
                             </div>
-                            <div className="blogSectionName">
+                            <div className="postText">
                                 <a ><span>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.</span></a>
                             </div>
                         </div>

@@ -1,34 +1,75 @@
 @import "../../../../main.scss";
 
-.blogSectionTitle {
-  margin-left: 40px;
-  margin-top: 60px;
+@media (min-width: 770px) {
+  .blogSectionTitle {
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+
+  .blogSectionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  .postItem {
+    display: flex;
+    font-size: 12px;
+    text-align: left;
+    padding-right: 80px;
+    font-size: 8px;
+    margin-top: 20px;
+  }
+
+  .blogSectionName {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .blogSectionImage {
+    height: 100px;
+  }
 }
 
-.blogSectionContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 40px;
-  margin-top: 30px;
-}
+@media (max-width: 769px) {
+  .blogSection {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.postItem {
-  display: flex;
-  //flex-direction: row;
-  //justify-content: center;
-  font-size: 12px; /* wielkosc czcionki */
-  text-align: left; /* kontrolowanie tekstu: cala szerokosc tekstu */
-  padding-right: 80px;
-  font-size: 8px;
-  margin-top: 20px;
-}
+  .blogSectionContainer {
+    margin-top: 20px;
+  }
 
-.blogSectionName {
-  margin-left: 20px;
-  margin-top: 20px;
-}
+  .blogSectionTitle {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
 
-.blogSectionImage {
-  height: 100px;
+  .postTitle{
+    margin-top: 20px;
+  }
+
+  .dotText {
+    margin-left: 10px;
+  }
+
+  .postText {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .postImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 20px;
+  }
 }

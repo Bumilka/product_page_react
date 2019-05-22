@@ -1,32 +1,37 @@
 @import "../../../main.scss";
 
-.menuNavbar {
-  display: block;
-  padding: 3px;
-  height: 40px;
-  background: white;
+@media (min-width: 769px) {
+  .menuNavbar {
+    display: block;
+    padding: 3px;
+    height: 40px;
+    background: white;
+  }
+
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .navTitle {
+    margin-right: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
 }
-
-
-.navbarContainer {
-  display: flex;
-  flex-direction: row;
+@media (max-width: 770px) {
+  .menuNavbar {
+    display: none;
+  }
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.navTitle {
-  margin-right: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
-}
-
 .dropdown ul {
   list-style-type: none;
   margin: 0;
@@ -54,4 +59,3 @@
   background-color: $darkRed;
   color: white;
 }
-

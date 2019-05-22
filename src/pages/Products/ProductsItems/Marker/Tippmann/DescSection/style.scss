@@ -1,47 +1,116 @@
-.descSection {
-  margin-left: 40px;
-  margin-right: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-p {
-  height: 0;
-  width: 40%;
-  overflow: hidden;
-  transition: height 0.2s;
-}
-p.active {
-  height: 55px;
+@media(min-width: 769px){
+  .descSection {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  p {
+    height: 0;
+    width: 40%;
+    overflow: hidden;
+    transition: height 0.2s;
+  }
+  p.active {
+    height: 55px;
+  }
+  
+  .answersAndQuestionsSection{
+    width: 50%;
+  }
+  
+  .tableDescSection{
+    margin-right: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+    table-layout: fixed;
+  
+  }
+  .productInformationText{
+    margin-top: 20px;
+    line-height: 30px;
+  
+  }
+  
+  .tableInformation{
+    margin-right: 10px;
+  }
+  .shortDataProduct {
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  
+  .tableInformationItems{
+    margin-top: 20px;
+    line-height: 20px;
+  }
 }
 
-.answersAndQuestionsSection{
-  width: 50%;
+@media(max-width: 770px){
+  .descSection {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    height: 0;
+    width: 40%;
+    overflow: hidden;
+    transition: height 0.2s;
+  }
+  p.active {
+    height: 55px;
+    width: 100%;
+  }
+  
+  .answersAndQuestionsSection{
+    width: 50%;
+  }
+
+  .questionButonSection{
+    margin-top: 25px;
+    margin-block-end: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .questionButon{
+    margin-top: 10px;
+    background-color: red;
+    border: none;
+    color:white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .tableDescSection{
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    table-layout: fixed;
+  
+  }
+  .productInformationText{
+    margin-top: 20px;
+    line-height: 30px;
+  
+  }
+  
+  .tableInformation{
+    margin-right: 10px;
+  }
+  .shortDataProduct {
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  
+  .tableInformationItems{
+    margin-top: 20px;
+    line-height: 20px;
+  }
 }
 
-.tableDescSection{
-  margin-right: 40px;
-  margin-left: 30px;
-  cursor: pointer;
-  table-layout: fixed;
-
-}
-.productInformationText{
-  margin-top: 20px;
-  line-height: 30px;
-
-}
-
-.tableInformation{
-  margin-right: 10px;
-}
-.shortDataProduct {
-  margin-top: 20px;
-  line-height: 30px;
-}
-
-.tableInformationItems{
-  margin-top: 20px;
-  line-height: 20px;
-}
 

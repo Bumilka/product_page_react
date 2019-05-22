@@ -1,38 +1,28 @@
 @import "react-image-gallery/styles/scss/image-gallery.scss";
 @import "../../../../../../main.scss";
 
-.projectorSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-block-end: 40px;
-}
-
-.ProjectorSectionSlider {
-  width: 50%;
-  margin-top: 50px;
-  width: 70%;
-  margin-right: 50px;
-}
-
-.app .image-gallery,
-.app-sandbox {
-  margin: 0 auto;
-  width: 65%;
-  transition: all 1s ease;
-}
-
-@media (max-width: 1320px) {
-  .app-sandbox-content {
-    padding: 0 20px;
-  }
+.buttonAddBag {
+  margin-top: 20px;
+  align-self: center;
+  background-color: red;
+  border:none;
+  padding: 20px;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .app-header {
     font-size: 20px;
+  }
+
+  .projectorSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .app-buttons li {
@@ -59,155 +49,303 @@
     font-size: 16px;
     padding: 15px;
   }
+
+  .app .image-gallery,
+  .app-sandbox {
+    margin: 0 auto;
+    width: 65%;
+    transition: all 1s ease;
+  }
+
+  .productTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: $darkGrey;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .producentData {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 15px;
+  }
+  .producent .producentName {
+    text-transform: uppercase;
+  }
+  .producentName {
+    color: $darkRed;
+  }
+
+  .dataTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: $darkGrey;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    margin-top: 15px;
+  }
+  .changeColorProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .changeColorProduct {
+    border: 1px solid rgb(201, 196, 196);
+    cursor: pointer;
+    margin-block-end: 10px;
+  }
+  
+  .changeColorProductImage {
+    margin-right: 10px;
+    border: $darkGrey;
+    width: 80px;
+  }
+
+  .inputProduct {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shipmentData {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .shipmentDataItems {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shipmentDataText {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .shipmentDataItems .availableButton {
+    margin-right: 10px;
+  }
+
+  .negoButton {
+    margin-right: 10px;
+  }
+
+  .availableText {
+    font-size: 10px;
+    margin-right: 105px;
+  }
+
+  .negoTextItems {
+    font-size: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-top: 5px;
+  }
+
+  .negoText {
+    color: red;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .projectorShopBagSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .projectorSaleText {
+    text-decoration-line: line-through;
+    font-size: 12px;
+    color: rgb(160, 156, 156);
+  }
+
+  .projectorPriceText {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 780px) {
   .app .image-gallery,
   .app-sandbox {
     width: 100%;
   }
+  .app-sandbox-content {
+    padding: 0 20px;
+  }
+  .projectorSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-block-end: 40px;
+  }
+
+  .projectorSectionSlider {
+    width: 50%;
+    margin-top: 50px;
+    width: 70%;
+    margin-right: 50px;
+  }
+
+  .app .image-gallery,
+  .app-sandbox {
+    margin: 0 auto;
+    width: 65%;
+    transition: all 1s ease;
+  }
+
+  .productTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: $darkGrey;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .producentData {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .producent .producentName {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .producentName {
+    color: $darkRed;
+  }
+  .changeColorSection {
+    display: flex;
+    flex-direction: row;
+  }
+  .dataTitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: $darkGrey;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    margin-top: 15px;
+  }
+  .changeColorProducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .changeColorProduct {
+    border: 1px solid rgb(201, 196, 196);
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .changeColorProductImage {
+    margin-right: 10px;
+    width: 100px;
+    border: $darkGrey;
+  }
+
+  .inputProduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shipmentDataItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shipmentDataText {
+    color: red;
+    font-size: 10px;
+    text-align: end;
+  }
+
+  .shipmentDataItems .availableButton {
+    margin-right: 10px;
+  }
+
+  .negoButton {
+    margin-right: 10px;
+  }
+
+  .shipmentData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .availableText {
+    font-size: 10px;
+    margin-right: 105px;
+  }
+
+  .negoTextItems {
+    font-size: 10px;
+    margin-right: 105px;
+    margin-top: 10px;
+    margin-top: 5px;
+  }
+
+  .negoText {
+    color: red;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .projectorSaleText {
+    text-decoration-line: line-through;
+    font-size: 12px;
+    color: rgb(160, 156, 156);
+  }
+
+  .projectorPriceText {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .projectorShopBagSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+
 }
 
-//Section Data Product
-
-.productTitle {
-  font-size: 30px;
-  font-weight: bold;
-  color: $darkGrey;
-  margin: 0;
-  line-height: 1.1em;
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+/*
+@media (max-width: 1320px) {
+  .app-sandbox-content {
+    padding: 0 20px;
+  }
 }
-.producentData {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-.producent .producentName {
-  text-transform: uppercase;
-  margin-right: 10px;
-}
-.producentName {
-  color: $darkRed;
-}
-.changeColorSection {
-  display: flex;
-  flex-direction: row;
-}
-.dataTitle {
-  font-size: 15px;
-  font-weight: bold;
-  color: $darkGrey;
-  margin: 0;
-  line-height: 1.1em;
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
-  margin-bottom: 13px;
-  margin-top: 15px;
-}
-.changeColorProducts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.changeColorProduct {
-  border: 1px solid rgb(201, 196, 196);
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-.changeColorProductImage {
-  margin-right: 10px;
-  width: 100px;
-  border: $darkGrey;
-}
-
-.InputProduct {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.shipmentDataItems {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.shipmentDataText {
-  color: red;
-  font-size: 10px;
-  text-align: end;
-}
-
-.shipmentDataItems .availableButton {
-  margin-right: 10px;
-}
-
-.negoButton {
-  margin-right: 10px;
-}
-
-.shipmentData {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.availableText {
-  font-size: 10px;
-  margin-right: 105px;
-}
-
-
-.negoTextItems {
-  font-size: 10px;
-  margin-right: 105px;
-  margin-top: 10px;
-  margin-top: 5px;
-}
-
-.negoText {
-  color: red;
-  font-size: 8px;
-  font-weight: bold;
-}
-
-.projectorSaleText {
-  text-decoration-line: line-through;
-  font-size: 12px;
-  color: rgb(160, 156, 156);
-}
-
-.projectorPriceText {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.projectorShopBagSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-.buttonAddBag{
-  align-self: center;
-}
-
-.buttonAddBagText{
-  background-color: red;
-  padding-left: 20px;
-  padding: 20px;
-  font-size: 12px;
-  color: white;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
+*/
