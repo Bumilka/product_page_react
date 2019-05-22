@@ -1,24 +1,24 @@
-@import '../../../main.scss';
+@import "../../../main.scss";
 
-.toggleButton{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 25px;
-    width: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
+.toggleButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.toggleButton:focus{
-    outline: none;
+.toggleButton:focus {
+  outline: none;
 }
 
-.toggleButtonLine{
-    width: 30px;
-    height: 2px;
-    background: $darkGrey;
+.toggleButtonLine {
+  width: 30px;
+  height: 2px;
+  background: $darkGrey;
 }

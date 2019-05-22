@@ -1,26 +1,85 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
-footer{
-    display: block;
-    background: url(../../image/footer/bg-footer.png) repeat-x
-    center top;
-    background-size: contain;
-    padding-top: 15%;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: none !important;
-    margin-top: 10px;
-    clear: both;
+footer {
+  display: block;
+  background: url(../../image/footer/bg-footer.png) repeat-x center top;
+  background-size: contain;
+  padding-top: 15%;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  margin-top: 10px;
+  clear: both;
 }
-.footerContainers{
+.iaiLogo {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+.footerLinks a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 769px) {
+  .footerRWD {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainerRWD {
+    align-items: center;
+    padding-top: 20px;
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  .footerContainer {
+    display: none;
+  }
+  .footerTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .footerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (min-width: 770px) {
+  .footerContainers {
     margin: 0 auto;
-    padding-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-}
-.footerContainer{
+    padding-top: 35px;
+  }
+  .footerContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,8 +87,8 @@ footer{
     margin-bottom: 30px;
     //margin-left: 35px;
     border-right: 1px solid #333;
-}
-.footerTitle{
+  }
+  .footerTitle {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -37,22 +96,22 @@ footer{
     padding-left: 40px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
     font-size: 10px;
     letter-spacing: 1.5px;
-}
-.footerLinks a{
-  
+  }
+  .footerLinks a {
     justify-content: start;
- 
+
     list-style-type: none;
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
     line-height: 1.5;
     font-size: 9px;
     letter-spacing: 1px;
-}
+  }
 
-.iaiLogo{
-    background: #333;
+  .footerRWD {
+    display: none;
+  }
 }

@@ -11,11 +11,11 @@ import './style.scss';
 
 
 class Header extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            sideDrawerOpen: false,  
-        } 
+            sideDrawerOpen: false,
+        }
     }
     /*
     componentDidMount(){
@@ -23,27 +23,27 @@ class Header extends Component {
     */
     drawerToggleClickHandler = () => {
         this.setState((prevState) => {
-            return{sideDrawerOpen: !prevState.sideDrawerOpen};
+            return { sideDrawerOpen: !prevState.sideDrawerOpen };
         });
     };
 
     backdropClickHandler = () => {
-        this.setState({sideDrawerOpen:false});
+        this.setState({ sideDrawerOpen: false });
     };
 
     render() {
         let backdrop;
-        if (this.state.sideDrawerOpen){
-            backdrop = <Backdrop click={this.backdropClickHandler}/>
+        if (this.state.sideDrawerOpen) {
+            backdrop = <Backdrop click={this.backdropClickHandler} />
         }
 
         return (
             <header style={{ height: '100%', width: '100%' }}>
-                <TopMenu/>
+                <TopMenu />
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-                <SideDrawer show={this.state.sideDrawerOpen}/>
-                <MenuDropdown/>
-                <BreadCrumb/>
+                <SideDrawer show={this.state.sideDrawerOpen} />
+                <MenuDropdown />
+                <BreadCrumb />
                 {backdrop}
             </header>
         );

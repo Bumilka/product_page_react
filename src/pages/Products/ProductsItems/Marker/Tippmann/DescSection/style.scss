@@ -1,3 +1,12 @@
+.questionButon{
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  color:white;
+  padding: 10px;
+  cursor: pointer;
+}
+
 @media(min-width: 769px){
   .descSection {
     margin-left: 40px;
@@ -45,6 +54,10 @@
     margin-top: 20px;
     line-height: 20px;
   }
+
+  .questionButon{
+    margin-left: 10px;
+  }
 }
 
 @media(max-width: 770px){
@@ -77,14 +90,6 @@
     text-align: center;
   }
 
-  .questionButon{
-    margin-top: 10px;
-    background-color: red;
-    border: none;
-    color:white;
-    padding: 10px;
-    cursor: pointer;
-  }
   
   .tableDescSection{
     margin-right: 10px;

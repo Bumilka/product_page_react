@@ -5,7 +5,7 @@ import './style.scss'
 class BreadCrumb extends Component {
     render() {
         return (
-            <div className="breadCrumbSection">  
+            <div className="breadCrumbSection">
                 Strona główna >
             </div>
         );

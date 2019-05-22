@@ -28,8 +28,18 @@
     margin-top: 20px;
   }
 
-  .blogSectionImage {
-    height: 100px;
+  .postImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+  .postText{
+    width: 80%;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 15px;
+    line-height: 30px;
   }
 }
 

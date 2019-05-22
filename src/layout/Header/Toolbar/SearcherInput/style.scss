@@ -1,28 +1,28 @@
-@import '../../../../main.scss';
- 
-.menuSearch{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
+@import "../../../../main.scss";
+
+.menuSearch {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
 }
-.searcherInput{
-    height: 21px;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    font-size: 10px;
-    color: $darkGrey;
+.searcherInput {
+  height: 21px;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  font-size: 10px;
+  color: $darkGrey;
 }
 
-.searchButton{
-    height: 35px;
-    width: 35px;
-    padding: 10px;
-    margin-left: -1px;
-    background: $darkGrey;
-    border: none;
+.searchButton {
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  margin-left: -1px;
+  background: $darkGrey;
+  border: none;
 }
-.searchIcon{
-    width: 15px;
+.searchIcon {
+  width: 15px;
 }

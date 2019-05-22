@@ -26,7 +26,7 @@ const Toolbar = props => (
                         <SearcherInput />
                     </li>
                     <li>
-                        <LoginSection/>
+                        <LoginSection />
                     </li>
                 </ul>
             </div>

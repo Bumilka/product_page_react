@@ -58,7 +58,7 @@ class MenuDropdown extends Component {
                             <a><Link to="clothing" className="navTitle"> ODZIEŻ </Link></a>
                         </li>
                         <li></li>
-                       
+
                         <li>
                             <a><Link to="paints-balls" className="navTitle"> KULKI </Link></a>
                         </li>

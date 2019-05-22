@@ -32,3 +32,22 @@
     font-size: 11px;
     line-height: 20px;
 }
+
+@media (min-width: 769px) {
+
+    .hotSpotSectionContainerRWD{
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .hotSpotSectionColumn{
+        display: none;
+    }
+    .hotSpotSectionColumnRWD{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

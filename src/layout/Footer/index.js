@@ -96,18 +96,18 @@ class Footer extends Component {
                             <ul className="footerLinks">
                                 <li>
                                     <a href="#" title="+48 574 0046 421">
-                                        <span style={{fontSize: '16px'}}> +48 574 0046 421 </span>
+                                        <span style={{ fontSize: '16px' }}> +48 574 0046 421 </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="Email">
-                                        <span style={{ fontSize: '12px'}}> kontakt@assasinarmy.pl </span>
+                                        <span style={{ fontSize: '12px' }}> kontakt@assasinarmy.pl </span>
                                     </a>
                                 </li>
-                                <li  style={{ paddingTop:'15px'}}>
+                                <li style={{ paddingTop: '15px' }}>
                                     <a href="#" title="Regulamin">
-                                        <span style={{paddingRight:'15px'}}> <img src={Fb}/> </span>
-                                        <span style={{paddingRight:'15px'}}> <img src={Insta} /> </span>
+                                        <span style={{ paddingRight: '15px' }}> <img src={Fb} /> </span>
+                                        <span style={{ paddingRight: '15px' }}> <img src={Insta} /> </span>
                                     </a>
                                 </li>
                             </ul>
@@ -147,10 +147,34 @@ class Footer extends Component {
                             </ul>
                         </li>
                     </ul>
-                </div>
-                    <div className="iaiLogo">
-                        <img src={IAI}/>
+                    <div className="footerRWD">
+                        <ul className="footerContainerRWD">
+                            <li>
+                                <ul className="footerLinks">
+                                    <li>
+                                        <a href="#" title="+48 574 0046 421">
+                                            <span style={{ fontSize: '16px' }}> +48 574 0046 421 </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Email">
+                                            <span style={{ fontSize: '12px' }}> kontakt@assasinarmy.pl </span>
+                                        </a>
+                                    </li>
+                                    <li style={{ paddingTop: '15px' }}>
+                                        <a href="#" title="Regulamin">
+                                            <span style={{ paddingRight: '15px' }}> <img src={Fb} /> </span>
+                                            <span style={{ paddingRight: '15px' }}> <img src={Insta} /> </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div className="iaiLogo">
+                    <img src={IAI} />
+                </div>
             </footer>
         );
     }
