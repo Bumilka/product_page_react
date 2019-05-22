@@ -3,8 +3,11 @@
 ### `Getting started`
 
 #`git clone  https://github.com/Bumilka/iai-website.git`
+<br>
 #`npm install`
+<br>
 #`npm start`
+<br>
 
 
 Then open.<br>
