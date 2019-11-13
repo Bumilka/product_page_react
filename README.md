@@ -4,6 +4,8 @@
 
 #`git clone  https://github.com/Bumilka/iai-website.git`
 <br>
+#` cd iai-website`
+<br>
 #`npm install`
 <br>
 #`npm start`
